@@ -1,0 +1,32 @@
+.main-nav {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // align-content: stretch;
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    // align-items: center;
+}
+
+  li {
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 33px 25px;
+
+      &:first-child {
+      background-color: $color-accent;
+      }
+
+  a {
+    text-decoration: none;
+    color: $color-ligth;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  }
+}

@@ -1,19 +1,99 @@
 <!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой первый проект</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-    <div class="promo">
-        <div class="promo-inner">
-            <h1 class="promo-ttl">Заголовок сайта</h1>
-            <p class="promo-slogan">Описание сайта, типа тут все самое офиггенное и опупенное</p>
-        </div>
-    </div>
 
-    <script src="scripts/script.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой первый проект</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="#" class="main-logo">Butterfly</a>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="order-lead">
+      <div class="order-lead-fade">
+        <div class="order-lead-inner">
+
+          <span class="background-span">Фото бабочки на модели</span>
+
+          <h1 class="order-lead-title">Индивидуальный пошив галсутков-бабочек</h1>
+
+          <div class="order-lead-btn">
+            <button class="btn" type="submit">Заказать бабочку</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="portfolio-inner">
+
+        <h2 class="portfolio-title">Наши работы</h2>
+
+
+        <div class="portfolio-wrap">
+
+          <div class="photo-wrap">
+            <img src="images/portfolio-b-blue.jpg" alt="Фото бабочки в упаковке" class="portfolio-photo">
+            <!-- <span class="portfolio-span">Бабочка такая</span> -->
+          </div>
+
+          <div class="pic-wrap">
+            <img src="images/portfolio-b-ornament.jpg" alt="Фото бабочки в упаковке" class="portfolio-photo">
+            <!-- <span class="portfolio-span">Бабочка растакая</span> -->
+          </div>
+
+          <div class="pic-wrap">
+            <img src="images/portfolio-b-model.jpg" alt="Фото бабочки на человеке" class="portfolio-photo">
+            <!-- <span class="portfolio-span">Бабочка сякая</span> -->
+          </div>
+
+          <div class="pic-wrap">
+            <img src="images/portfolio-b-cat.jpg" alt="Фото бабочки на коте" class="portfolio-photo">
+            <!-- <span class="portfolio-span">Кривая</span> -->
+          </div>
+        </div>
+
+        <div class="order-btn">
+          <button class="btn" type="submit">Все бабочки</button>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+
+
+
+  </main>
+
+  <footer class="footer">
+    <a href="tel:+78128008080" class="header-phone">+7 812 800-80-80</a>
+
+  </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
+
 </html>

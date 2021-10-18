@@ -1,0 +1,38 @@
+.portfolio-inner {
+  @include container;
+}
+.portfolio {
+  text-align: center;
+}
+
+
+.portfolio-title {
+  margin: 0;
+  padding-top: 130px;
+  font-size: 64px;
+  line-height: 87px;
+  font-weight: 400;
+  color: $color-dark;
+  text-align: center;
+}
+
+
+.portfolio-wrap {
+  display: flex;
+  padding-top: 100px;
+}
+
+.portfolio-photo {
+  margin: 0 10px;
+}
+
+.portfolio-photo {
+  width: 25%;
+  padding: 10px;
+}
+
+.order-btn {
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
+

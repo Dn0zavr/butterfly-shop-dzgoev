@@ -1,0 +1,23 @@
+.header {
+  // padding: 16px 0;
+  background-color: $color-dark;
+  color: $color-ligth;
+}
+
+.header-inner {
+  @include container;
+}
+
+.header-wrap {
+  display: flex;
+}
+
+.main-logo {
+  margin-right: auto;
+  color: inherit;
+  padding: 16px 0;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
+  text-decoration: none;
+}
