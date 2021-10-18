@@ -1,0 +1,60 @@
+
+.order-inner {
+  @include container;
+}
+
+.order-inner-fade {
+  background-color:rgba(51, 51, 51, 0.1)
+}
+
+.order-title {
+  padding-top: 130px;
+  padding-bottom: 40px;
+  margin: 0;
+  font-size: 64px;
+  line-height: 87px;
+  color: $color-dark;
+  text-align: center;
+}
+
+.order-discription {
+  padding-bottom: 90px;
+  margin: 0;
+  font-size: 28px;
+  line-height: 38px;
+  color: $color-dark;
+  text-align: center;
+}
+
+.form-order {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.form-order-field {
+  margin-bottom: 130px;
+  padding: 0 ($indent-gap/2);
+}
+
+.form-order-label {
+  padding-bottom: 8px;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-dark;
+}
+
+.form-order-input {
+  border: none;
+  font-size: 28px;
+  line-height: 34px;
+  color: $color-dark;
+  padding-left: 30px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-radius: 6px;
+}
+
