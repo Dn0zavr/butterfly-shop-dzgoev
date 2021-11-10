@@ -107,17 +107,18 @@ $(document).ready(function(){
     }
 
     function createHtml(data) {
-      let dataArray = data.reviews;
+      let dataArray = data.portfolio;
       let htmlString = '';
 
       dataArray.forEach(function(item){
-        htmlString = htmlString +
-        `<div class="portfolio-pic" data-type="${item.dataType}">
-        <figure class="portfolio-figure">
-          <img src="${item.imageUrl}" alt="${item.imageAlt}" class="portfolio-photo">
-          <figcaption class="portfolio-pic-text">${item.description}</figcaption>
-        </figure>
-      </div>`;
+        console.log(item)
+        htmlString = htmlString + `
+        <div class="portfolio-pic" data-type="strict">
+                <figure class="portfolio-figure">
+                  <img src="${item.imageUrl}" alt="${item.imageAlt}" class="portfolio-photo">
+                  <figcaption class="portfolio-pic-text">${item.description}</figcaption>
+                </figure>
+              </div>`;
       });
 
       return htmlString;
