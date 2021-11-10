@@ -1,7 +1,14 @@
 .header {
-  // padding: 16px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
   background-color: $color-dark;
-  color: $color-ligth;
+
+  @media (max-width: $df-mobile) {
+    padding: 16px 0;
+  }
 }
 
 .header-inner {
@@ -10,14 +17,30 @@
 
 .header-wrap {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.main-logo {
-  margin-right: auto;
-  color: inherit;
-  padding: 16px 0;
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 57px;
-  text-decoration: none;
+.burger {
+  display: none;
+  border: none;
+  background-color: $color-dark;
+
+  @media (max-width: $df-mobile) {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid $color-ligth;
+    border-bottom: 3px solid $color-ligth;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      border-top: 3px solid $color-ligth;
+    }
+  }
 }

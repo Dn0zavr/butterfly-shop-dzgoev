@@ -1,0 +1,131 @@
+.faq {
+  padding-top: 220px;
+  padding-bottom: 130px;
+
+  @media (max-width: $df-tablet) {
+    padding-top: 210px;
+    padding-bottom: 120px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding-top: 160px;
+    padding-bottom: 90px;
+  }
+}
+
+.faq-inner {
+  @include container;
+}
+
+.faq-title {
+  @include h2;
+  margin-bottom: 80px;
+
+  @media (max-width: $df-tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 50px;
+  }
+}
+
+.faq-item {
+  margin-bottom: 40px;
+  border: 1px solid rgba(255, 45, 45, .2);
+  border-radius: 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 8px rgba(212, 98, 64, .2);
+  }
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px;
+  width: 100%;
+  font-family: $font, sans-serif;
+  color: #152b3c;
+  font-size: 36px;
+  line-height: 49px;
+  font-weight: 300;
+  text-align: left;
+  border: none;
+  background-color: $color-light;
+  cursor: pointer;
+
+  @media (max-width: $df-tablet) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.js-faq-icon {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-image: url('/images/icon-plus.svg');
+
+  @media (max-width: $df-mobile) {
+    height: 30px;
+    width: 30px;
+    background-size: 100% 100%;
+  }
+}
+
+.faq-icon-minus {
+  background-image: url('/images/icon-minus.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.faq-answer {
+  display: none;
+  margin: 0;
+  padding: 0 30px 30px 30px;
+
+  @media (max-width: $df-tablet) {
+    padding: 0 30px 25px 30px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 0 15px 15px 15px;
+  }
+}
+
+.faq-text {
+  margin: 0;
+  padding-bottom: 40px;
+  color: #000;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $df-tablet) {
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

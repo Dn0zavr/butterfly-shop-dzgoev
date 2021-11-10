@@ -1,18 +1,46 @@
 .footer {
+  padding: 31px 0;
   background-color: $color-dark;
-  color: $color-ligth;
+
+  @media (max-width: $df-tablet) {
+    padding: 35px 0;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    text-align: center;
+  }
 }
 
 .footer-inner {
   @include container;
 }
 
-.main-logo {
-  margin-right: auto;
-  color: inherit;
-  padding: 16px 0;
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 57px;
-  text-decoration: none;
+.footer-wrap {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+  }
 }
+
+.footer-logo {
+  margin-right: auto;
+}
+
+.footer-phone {
+  margin-right: 60px;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 400;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+}
+

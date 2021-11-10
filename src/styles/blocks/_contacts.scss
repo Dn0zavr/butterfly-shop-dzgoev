@@ -1,0 +1,120 @@
+.contacts {
+  padding-top: 220px;
+  padding-bottom: 130px;
+  color: $color-dark;
+
+  @media (max-width: $df-tablet) {
+    padding-top: 210px;
+    padding-bottom: 120px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding-top: 160px;
+    padding-bottom: 90px;
+  }
+}
+
+.contacts-inner {
+  @include container;
+}
+
+.contacts-title {
+  @include h2;
+  margin-bottom: 80px;
+
+  @media (max-width: $df-tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 50px;
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $df-tablet) {
+  }
+
+  @media (max-width: $df-mobile) {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.tabs-item {
+  padding: 0 25px;
+
+  @media (max-width: $df-tablet) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+}
+
+.tabs-link {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &.active {
+    color: $color-accent;
+  }
+}
+
+.contacts-content {
+  display: none;
+
+  &.active {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $df-mobile) {
+      display: block;
+    }
+  }
+}
+
+.contacts-info {
+  margin-bottom: 20px;
+}
+
+.contacts-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 400;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $df-tablet) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+.contacts-map {
+  flex-basis: 58.33%;
+}

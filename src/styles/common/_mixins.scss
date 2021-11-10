@@ -1,4 +1,43 @@
 @mixin container {
-  max-width: 1276px;
+  max-width: 1276px + $indent-gap;
   margin: 0 auto;
+  padding-left: ($indent-gap / 2);
+  padding-right: ($indent-gap / 2);
+}
+
+@mixin h2 {
+  margin: 0;
+  color: $color-dark;
+  font-size: 64px;
+  line-height: 87px;
+  font-weight: 400;
+  text-align: center;
+
+  @media (max-width: $df-tablet) {
+    font-size: 60px;
+    line-height: 82px;
+  }
+
+  @media (max-width: $df-mobile) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+}
+
+@mixin logo {
+  color: inherit;
+  font-size: 42px;
+  line-height: 57px;
+  font-weight: 600;
+  text-decoration: none;
+
+  @media (max-width: $df-tablet) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  @media (max-width: $df-mobile) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }

@@ -1,14 +1,24 @@
 .order-lead {
   text-align: center;
   background-image: url('../images/order-back.jpg');
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  color: $color-ligth;
+  background-position: top;
 }
 
 .order-lead-fade {
-  background-color:rgba(51, 51, 51, 0.4);
+  padding-top: 290px;
+  padding-bottom: 214px;
+  background-color:rgba(51, 51, 51, .4);
+
+  @media (max-width: $df-tablet) {
+    padding-top: 270px;
+    padding-bottom: 190px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
 }
 
 .order-lead-inner {
@@ -17,10 +27,22 @@
 
 .order-lead-title {
   margin: 0;
-  padding-top: 200px;
-  font-weight: 600;
+  padding-bottom: 130px;
   font-size: 72px;
   line-height: 98px;
+  font-weight: 600;
+
+  @media (max-width: $df-tablet) {
+    padding-bottom: 100px;
+    font-size: 54px;
+    line-height: 74px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding-bottom: 80px;
+    font-size: 32px;
+    line-height: 44px;
+  }
 }
 
 .order-lead-btn {

@@ -4,6 +4,7 @@
 @import "common/_mixins";
 @import "common/_typography";
 @import "common/_common";
+@import "plugins/slick";
 
 // blocks
 @import "blocks/_promo";
@@ -14,3 +15,9 @@
 @import "blocks/_portfolio";
 @import "blocks/_order";
 @import "blocks/_footer";
+@import "blocks/_social-icons.scss";
+@import "blocks/_catalog.scss";
+@import "blocks/_faq.scss";
+@import "blocks/_contacts.scss";
+@import "blocks/_reviews.scss";
+

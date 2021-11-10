@@ -1,0 +1,28 @@
+{
+  "catalog": [
+    {
+      "imageUrl": "images/portfolio-b-blue.jpg",
+      "imageAlt": "Фото бабочки в упаковке",
+      "description": "Бабочка такая",
+      "dataType": "strict"
+    },
+    {
+      "imageUrl": "images/portfolio-b-ornament.jpg",
+      "imageAlt": "Фото бабочки в упаковке",
+      "description": "Бабочка растакая",
+      "dataType": "strict"
+    },
+    {
+      "imageUrl": "images/portfolio-b-model.jpg",
+      "imageAlt": "Фотография синей бабочки",
+      "description": "Бабочка сякая",
+      "dataType": "strict"
+    },
+    {
+      "imageUrl": "images/portfolio-b-cat.jpg",
+      "imageAlt": "Фотография синей бабочки",
+      "description": "Кривая",
+      "dataType": "animals"
+    }
+  ]
+}

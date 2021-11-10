@@ -1,0 +1,149 @@
+.reviews {
+  padding-top: 220px;
+  padding-bottom: 130px;
+
+  @media (max-width: $df-tablet) {
+    padding-top: 210px;
+    padding-bottom: 120px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding-top: 160px;
+    padding-bottom: 90px;
+  }
+}
+
+.reviews-inner {
+  @include container;
+}
+
+.reviews-title {
+  @include h2;
+  margin-bottom: 80px;
+
+  @media (max-width: $df-tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 50px;
+  }
+}
+
+.reviews-wrap {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $df-mobile) {
+    justify-content: center;
+  }
+}
+
+.reviews-btn-wrap {
+  flex-grow: 1;
+  text-align: center;
+
+
+}
+
+.reviews-btn {
+  height: 60px;
+  width: 60px;
+  border: none;
+  background-color: $color-light;
+  background-size: cover;
+  cursor: pointer;
+
+  @media (max-width: $df-tablet) {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+.reviews-content {
+  flex-shrink: 0;
+  width: 83.33%;
+}
+
+.reviews-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 128px;
+
+  @media (max-width: $df-tablet) {
+    margin: 0 $indent-gap;
+  }
+
+  @media (max-width: $df-mobile) {
+    display: block;
+    text-align: center;
+  }
+
+}
+
+.reviews-img-wrap {
+  flex-basis: 37.5%;
+  margin-right: $indent-gap;
+
+  @media (max-width: $df-mobile) {
+    margin-right: 0;
+  }
+}
+
+.reviews-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+
+  @media (max-width: $df-tablet) {
+    height: 230px;
+    width: 230px;
+  }
+}
+
+.reviews-info {
+  color: $color-dark;
+
+  @media (max-width: $df-mobile) {
+    text-align: center;
+  }
+}
+
+.reviews-name {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: 400;
+
+  @media (max-width: $df-tablet) {
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+}
+
+.reviews-text {
+  margin: 0;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 400;
+
+  @media (max-width: $df-tablet) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $df-mobile) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

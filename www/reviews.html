@@ -29,60 +29,66 @@
 
   <main>
 
-    <section class="order-lead">
-      <div class="order-lead-fade">
-        <div class="order-lead-inner">
+    <section class="reviews">
+      <div class="reviews-inner">
 
-          <span class="background-span">Фото бабочки на модели</span>
+        <h1 class="reviews-title">Отзывы</h1>
 
-          <h1 class="order-lead-title">Индивидуальный пошив галсутков-бабочек</h1>
+        <div class="reviews-wrap js-reviews-wrap">
 
-          <a href="#order" class="btn">Заказать бабочку</a>
+          <div class="reviews-btn-wrap">
+            <button class="reviews-btn js-btn-prev" style="background-image: url('../images/icon-prev.svg');"></button>
+          </div>
+
+          <div class="reviews-content js-reviews-content">
+
+            <div class="reviews-container">
+              <div class="reviews-slider">
+
+                <div class="reviews-img-wrap"><img src="../images/reviews-pic.jpg" alt="Фото Лидии Ивановны"
+                    class="reviews-img"></div>
+                <div class="reviews-info">
+                  <h2 class="reviews-name">Лидия Ивановна</h2>
+                  <p class="reviews-text">Пацаны красавчики! Быстро и аккуратно починили мой лододос! <br>
+                    А так же вынесли за собой весь мусор! Еще и в шапке ходют - ван лав!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-container">
+              <div class="reviews-slider">
+                <div class="reviews-img-wrap"><img src="../images/reviews-pic-postarel.jpg" alt="Фото Ивана Михайловича"
+                    class="reviews-img"></div>
+                <div class="reviews-info">
+                  <h2 class="reviews-name">Иван Михайлович</h2>
+                  <p class="reviews-text">Отличный магазин, пока думал, как уложить все дивы в слайдер, состарился</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-container">
+              <div class="reviews-slider">
+                <div class="reviews-img-wrap"><img src="../images/reviews-pic-asian.jpg" alt="Фото Какеши Титано"
+                    class="reviews-img"></div>
+                <div class="reviews-info">
+                  <h2 class="reviews-name">Какеши Титано</h2>
+                  <p class="reviews-text">Отличный магазин, обязательно буду покупать у вас бабочки для своего
+                    следующего фильма о якудза! 11 отрубленных мезинцев из 10</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="reviews-btn-wrap">
+            <button class="reviews-btn js-btn-next" style="background-image: url('../images/icon-next.svg');"></button>
+          </div>
 
         </div>
+
       </div>
     </section>
 
-    <section class="portfolio">
-      <div class="portfolio-inner">
-
-        <h2 class="portfolio-title">Наши работы</h2>
-
-        <div class="portfolio-wrap">
-
-          <div class="portfolio-pic">
-            <figure class="portfolio-figure">
-              <img src="images/portfolio-b-blue.jpg" alt="Фото бабочки в упаковке" class="portfolio-photo">
-              <figcaption class="portfolio-pic-text">Бабочка такая</figcaption>
-            </figure>
-          </div>
-
-          <div class="portfolio-pic">
-            <figure class="portfolio-figure">
-              <img src="images/portfolio-b-ornament.jpg" alt="Фото бабочки в упаковке" class="portfolio-photo">
-              <figcaption class="portfolio-pic-text">Бабочка растакая</figcaption>
-            </figure>
-          </div>
-
-          <div class="portfolio-pic">
-            <figure class="portfolio-figure">
-              <img src="images/portfolio-b-model.jpg" alt="Фото бабочки на человеке" class="portfolio-photo">
-              <figcaption class="portfolio-pic-text">Бабочка сякая</figcaption>
-            </figure>
-          </div>
-
-          <div class="portfolio-pic">
-            <figure class="portfolio-figure">
-              <img src="images/portfolio-b-cat.jpg" alt="Фото бабочки на коте" class="portfolio-photo">
-              <figcaption class="portfolio-pic-text">Кривая</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="order-btn">
-          <a href="catalog.html" class="btn">Все бабочки</a>
-        </div>
-    </section>
 
     <section class="order" id="order">
       <div class="order-inner-fade">
@@ -152,6 +158,7 @@
   </footer>
 
   <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 
